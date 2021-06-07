@@ -7,7 +7,7 @@ require('dotenv').config();
 const app=express();
 
 //connect to mongoDB
-mongoose.connect(process.env.db);
+mongoose.connect("mongodb+srv://prakhar1:mongodb1@cluster0.aloqn.mongodb.net/myFirstDatabase?retryWrites=true&w=majority");
 mongoose.Promise=global.Promise;
 
 app.use(express.static('public'));
